@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker</h1>
+        
+        <div class="color-display" id="color-display"></div>
+        
+        <div class="color-picker-container">
+            <input type="color" id="color-picker" value="#3498db">
+            <div class="color-values">
+                <div class="color-value">
+                    <label>HEX:</label>
+                    <span id="hex-value">#3498db</span>
+                    <button class="copy-btn" data-value="hex">Copy</button>
+                </div>
+                
+                <div class="color-value">
+                    <label>RGB:</label>
+                    <span id="rgb-value">rgb(52, 152, 219)</span>
+                    <button class="copy-btn" data-value="rgb">Copy</button>
+                </div>
+                
+                <div class="color-value">
+                    <label>HSL:</label>
+                    <span id="hsl-value">hsl(204, 70%, 53%)</span>
+                    <button class="copy-btn" data-value="hsl">Copy</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rgb-controls">
+            <div class="rgb-control">
+                <label>R:</label>
+                <input type="number" id="r-value" min="0" max="255" value="52">
+            </div>
+            <div class="rgb-control">
+                <label>G:</label>
+                <input type="number" id="g-value" min="0" max="255" value="152">
+            </div>
+            <div class="rgb-control">
+                <label>B:</label>
+                <input type="number" id="b-value" min="0" max="255" value="219">
+            </div>
+        </div>
+        
+        <button class="save-btn" id="save-color">บันทึกสี</button>
+        
+        <div class="saved-colors" id="saved-colors">
+            <div class="saved-color" style="background-color: #3498db;"></div>
+            <div class="saved-color" style="background-color: #e74c3c;"></div>
+            <div class="saved-color" style="background-color: #2ecc71;"></div>
+            <div class="saved-color" style="background-color: #f39c12;"></div>
+            <div class="saved-color" style="background-color: #9b59b6;"></div>
+        </div>
+    </div>
+</body>
+</html>
